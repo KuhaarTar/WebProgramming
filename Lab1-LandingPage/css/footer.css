@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+.footer {
+    padding: 1.5rem;
+    background-color: #F8F8F8;
+}
+
+.footer-container {
+    width: 72%;
+    margin: auto;
+}
+
+.top-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-container hr {
+    border-width: 0;
+    background-color: #C4C4C4;
+    height: 0.1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.top-footer img {
+    width: 3.5%;
+}
+
+.top-footer p {
+    color: #848484;
+}
+
+.social-networks a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-networks img {
+    width: 20%;
+}
