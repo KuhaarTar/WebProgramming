@@ -1,0 +1,61 @@
+.header {
+    margin: 1rem auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.header-navbar ul {
+    display: flex;
+}
+
+.header-navbar li {
+    margin-right: 1rem;
+}
+
+.header-navbar a {
+    color: #B8BECD;
+}
+
+.logo {
+    width: 2.3rem;
+}
+
+.auth {
+    align-items: center;
+    margin: 0;
+    display: flex;
+}
+
+.auth li {
+    background-color: #FB8F1D;
+    display: flex;
+    justify-content: center;
+    width: 6.5rem;
+    padding: 0.7rem;
+    margin: 0 1rem;
+    border-radius: 0.6rem;
+}
+
+.auth li a {
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.auth li:nth-child(1) {
+    background-color: #FFFFFF;
+}
+
+.auth li:nth-child(1) {
+    border: #FB8F1D 0.1rem solid;
+}
+
+.auth li:nth-child(1) a {
+    color: #FB8F1D;
+}
+
+.auth li:nth-child(2) {
+    border: #FB8F1D 0.1rem solid;
+}
+

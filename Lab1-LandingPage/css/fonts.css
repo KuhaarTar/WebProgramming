@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+.top-footer p {
+    font-size: 0.8rem;
+    font-family: 'Mulish', sans-serif;
+}
+
+.left-info h1 {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.left-info p {
+    font-family: 'Mulish', sans-serif;
+}
+
+.section-title h1 {
+    font-size: 1.7rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.review-comment {
+    font-size: 1.2rem;
+    font-family: 'Mulish', sans-serif;
+}
+
+.top-line h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+}
+
+.top-line a {
+    font-weight: bold;
+}
+
+.read-more {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.blog p {
+    font-size: 0.9rem;
+}
+
+.blog-title {
+    font-size: 1rem;
+}
+
+.reviewer-name {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.header-navbar a {
+    font-size: 1rem;
+}
+
+.auth li {
+    font-size: 1rem;
+}
