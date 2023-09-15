@@ -1,4 +1,7 @@
 @media screen and (max-width: 860px) {
+    br {
+        display: none;
+    }
 
     .hide-element {
         display: none;
@@ -101,6 +104,14 @@
         align-items: center;
     }
 
+    .section-2 {
+        padding: 0;
+    }
+
+    .section-3 {
+        padding: 0;
+    }
+
     .top-footer {
         display: flex;
         flex-direction: column;
@@ -115,6 +126,24 @@
     }
 
     .social-networks {
+        width: 90%;
+    }
+
+    .stories-container {
+        padding: 0;
+        width: 80%;
+    }
+
+    .footer {
+        padding: 2rem 0;
+    }
+
+    .footer-container {
+        margin: 0;
+        width: 100%;
+    }
+
+    .footer hr {
         width: 90%;
     }
 }
@@ -136,6 +165,10 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+    }
+
+    .header {
+        width: 70%;
     }
 }
 
