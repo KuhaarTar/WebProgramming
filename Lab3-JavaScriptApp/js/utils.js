@@ -28,3 +28,13 @@ export const renderModelsOnLoad = (books) => {
         cardsContainer.innerHTML += returnCard ( book );
     } )
 }
+
+export const sortModels = (books) => {
+    clearContainer()
+    let sortedBooks = books.concat().sort ( function (book_one, book_two) {
+        if (book_one.priceUAH > book_two.priceUAH) return -1;
+        if (book_one.priceUAH < book_two.priceUAH) return 1;
+        return 0
+    } )
+    renderModelsOnLoad(sortedBooks)
+}

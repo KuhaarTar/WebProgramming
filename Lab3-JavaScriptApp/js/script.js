@@ -2,17 +2,10 @@ import {
     returnCard,
     clearContainer,
     clearInput,
-    renderModelsOnLoad,
+    renderModelsOnLoad, sortModels,
 } from './utils.js'
 
 let books = [
-    {
-        countOfPages: 432,
-        author: "Alice Johnson",
-        title: "The Science of Everything",
-        description: "An informative book exploring the wonders of science. ",
-        priceUAH: 686
-    },
     {
         countOfPages: 256,
         author: "Jane Smith",
@@ -26,7 +19,14 @@ let books = [
         title: "The Great Adventure",
         description: "A thrilling adventure novel with twists and turns.",
         priceUAH: 550
-    }
+    },
+    {
+        countOfPages: 432,
+        author: "Alice Johnson",
+        title: "The Science of Everything",
+        description: "An informative book exploring the wonders of science. ",
+        priceUAH: 686
+    },
 ];
 
 const cardsContainer = document.querySelector ( '.cards-container' );
@@ -38,9 +38,9 @@ const closeModal = document.getElementById ( 'close-modal' );
 const searchButton = document.getElementById ( 'searchButton' );
 const clearButton = document.getElementById ( 'clearButton' );
 const countButton = document.getElementById ( 'count-button' );
+const sortInput = document.getElementById ( 'sort-input' );
 
 renderModelsOnLoad ( books )
-
 clearButton.addEventListener ( "click", () => {
     clearInput ()
     clearContainer ()
@@ -76,3 +76,12 @@ countButton.addEventListener ( 'click', () => {
     } );
     countBlock.innerHTML += `<p class="total-cost">Total cost: <strong>${cost} UAH</strong></p>`;
 } );
+
+sortInput.addEventListener ( 'change', () => {
+    if (sortInput.checked) {
+        sortModels ( books )
+    } else {
+        clearContainer ()
+        renderModelsOnLoad ( books )
+    }
+} )
