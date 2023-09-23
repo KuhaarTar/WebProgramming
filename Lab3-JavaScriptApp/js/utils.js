@@ -26,6 +26,7 @@ export const clearInput = () => {
 export const renderModelsOnLoad = (books) => {
     books.forEach ( book => {
         cardsContainer.innerHTML += returnCard ( book );
+
     } )
 }
 

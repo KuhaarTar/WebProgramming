@@ -26,12 +26,20 @@ let books = [
         title: "The Science of Everything",
         description: "An informative book exploring the wonders of science. ",
         priceUAH: 686
+    },{
+        countOfPages: 256,
+        author: "Jane Smith",
+        title: "Mystery at Midnight2",
+        description: "A captivating mystery that keeps you guessing until the end.",
+        priceUAH: 100
     },
 ];
 
+let sortedBooks = []
+
 const cardsContainer = document.querySelector ( '.cards-container' );
 const darkBackground = document.querySelector ( '.dark-background' );
-const countBlock = document.querySelector ( '.count-block' );
+const countBlock = document.querySelector ( '.count-block p' );
 const modal = document.querySelector ( '.bad-request-modal' );
 const searchInput = document.getElementById ( 'searchInput' );
 const closeModal = document.getElementById ( 'close-modal' );
@@ -45,14 +53,21 @@ clearButton.addEventListener ( "click", () => {
     clearInput ()
     clearContainer ()
     renderModelsOnLoad ( books )
+
+    console.log ( sortedBooks )
+    sortedBooks.length = 0;
+    console.log ( sortedBooks )
 } );
 
 searchButton.addEventListener ( "click", () => {
+    sortedBooks.length = 0;
     clearContainer ()
     let isFound = false;
     let searchingTile = searchInput.value.toLowerCase ();
     books.forEach ( (book) => {
-        if (book.title.toLowerCase () === searchingTile) {
+        if (book.title.toLowerCase ().includes ( searchingTile )) {
+            sortedBooks.push ( book );
+            console.log ( sortedBooks );
             cardsContainer.innerHTML += returnCard ( book );
             isFound = true;
         }
@@ -70,11 +85,26 @@ closeModal.addEventListener ( 'click', () => {
 } )
 
 countButton.addEventListener ( 'click', () => {
-    let cost = 0;
-    books.forEach ( book => {
-        cost += book.priceUAH;
-    } );
-    countBlock.innerHTML += `<p class="total-cost">Total cost: <strong>${cost} UAH</strong></p>`;
+    try {
+        if (sortedBooks.length > 0) {
+            console.log ( "sortedBooks !0" )
+            let cost = 0;
+            sortedBooks.forEach ( book => {
+                cost += book.priceUAH;
+            } );
+            countBlock.textContent = `Total cost: ${cost} UAH`;
+        } else {
+            console.log ( "sortedBooks 0" )
+            let cost = 0;
+            books.forEach ( book => {
+                cost += book.priceUAH;
+            } );
+            countBlock.textContent = `Total cost: ${cost} UAH`;
+        }
+        console.log ( "sortedBooks end" )
+    } catch (e) {
+        console.error ( {e} )
+    }
 } );
 
 sortInput.addEventListener ( 'change', () => {
