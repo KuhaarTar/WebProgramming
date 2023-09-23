@@ -1,0 +1,58 @@
+
+.section-1 {
+    padding: 1rem;
+    margin: 3rem auto;
+    width: 85%;
+}
+
+.guides {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.guides a {
+    margin-top: 1rem;
+    padding: 0.9rem;
+    border: #FB8F1D 0.1rem solid;
+    color: #FFFFFF;
+    background-color: #FB8F1D;
+    border-radius: 0.6rem;
+    width: 9rem;
+}
+
+.left-info {
+    justify-content: center;
+    padding: 1rem;
+}
+
+.left-info h1 {
+    line-height: 1.6;
+}
+
+.left-info p {
+    line-height: 1.8;
+    color: #7D7987;
+}
+
+.download-btn {
+    display: flex;
+    text-align: center;
+}
+
+.guides img {
+    width: 45%;
+}
+
+.image-appear {
+    opacity: 0;
+    transform: translateY(20%);
+    animation: appear 0.8s ease forwards;
+}
+
+@keyframes appear {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
