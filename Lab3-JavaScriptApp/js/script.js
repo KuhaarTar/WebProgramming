@@ -2,7 +2,9 @@ import {
     returnCard,
     clearContainer,
     clearInput,
-    renderModelsOnLoad, sortModels,
+    renderModelsOnLoad,
+    sortModels,
+    countCostOfBooks,
 } from './utils.js'
 
 let books = [
@@ -26,12 +28,12 @@ let books = [
         title: "The Science of Everything",
         description: "An informative book exploring the wonders of science. ",
         priceUAH: 686
-    },{
+    }, {
         countOfPages: 256,
         author: "Jane Smith",
-        title: "Mystery at Midnight2",
+        title: "Mystery at Midnight <br> II part",
         description: "A captivating mystery that keeps you guessing until the end.",
-        priceUAH: 100
+        priceUAH: 1000
     },
 ];
 
@@ -73,45 +75,41 @@ searchButton.addEventListener ( "click", () => {
         }
     } )
     if (!isFound) {
-        renderModelsOnLoad ( books )
-        darkBackground.classList.remove ( 'hide-element' )
-        modal.classList.remove ( 'hide-element' )
+        renderModelsOnLoad ( books );
+        darkBackground.classList.remove ( 'hide-element' );
+        modal.classList.remove ( 'hide-element' );
     }
 } )
 
 closeModal.addEventListener ( 'click', () => {
-    darkBackground.classList.add ( 'hide-element' )
-    modal.classList.add ( 'hide-element' )
+    darkBackground.classList.add ( 'hide-element' );
+    modal.classList.add ( 'hide-element' );
 } )
 
 countButton.addEventListener ( 'click', () => {
-    try {
-        if (sortedBooks.length > 0) {
-            console.log ( "sortedBooks !0" )
-            let cost = 0;
-            sortedBooks.forEach ( book => {
-                cost += book.priceUAH;
-            } );
-            countBlock.textContent = `Total cost: ${cost} UAH`;
-        } else {
-            console.log ( "sortedBooks 0" )
-            let cost = 0;
-            books.forEach ( book => {
-                cost += book.priceUAH;
-            } );
-            countBlock.textContent = `Total cost: ${cost} UAH`;
-        }
-        console.log ( "sortedBooks end" )
-    } catch (e) {
-        console.error ( {e} )
+    if (sortedBooks.length > 0) {
+        let cost = countCostOfBooks ( sortedBooks );
+        countBlock.textContent = `Total cost: ${cost} UAH`;
+    } else {
+        let cost = countCostOfBooks ( books );
+        countBlock.textContent = `Total cost: ${cost} UAH`;
     }
 } );
 
 sortInput.addEventListener ( 'change', () => {
     if (sortInput.checked) {
-        sortModels ( books )
+        if (sortedBooks.length > 0) {
+            sortModels ( sortedBooks );
+        } else {
+            sortModels ( books );
+        }
     } else {
-        clearContainer ()
-        renderModelsOnLoad ( books )
+        if (sortedBooks.length > 0) {
+            clearContainer ()
+            renderModelsOnLoad ( sortedBooks );
+        } else {
+            clearContainer ()
+            renderModelsOnLoad ( books );
+        }
     }
 } )
