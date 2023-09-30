@@ -4,6 +4,10 @@
     border-right: #C4C4C4 solid 2px;
 }
 
+.side-manager hr {
+    width: 80%;
+}
+
 .count-block {
     margin: 0 auto;
     width: 100%;
