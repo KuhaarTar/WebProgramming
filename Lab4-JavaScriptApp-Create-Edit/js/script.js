@@ -7,37 +7,29 @@ import {
     countCostOfBooks,
 } from './utils.js'
 
-let books = [
-    {
-        countOfPages: 256,
-        author: "Jane Smith",
-        title: "Mystery at Midnight",
-        description: "A captivating mystery that keeps you guessing until the end.",
-        priceUAH: 357
-    },
-    {
-        countOfPages: 320,
-        author: "John Doe",
-        title: "The Great Adventure",
-        description: "A thrilling adventure novel with twists and turns.",
-        priceUAH: 550
-    },
-    {
-        countOfPages: 432,
-        author: "Alice Johnson",
-        title: "The Science of Everything",
-        description: "An informative book exploring the wonders of science. ",
-        priceUAH: 686
-    }, {
-        countOfPages: 256,
-        author: "Jane Smith",
-        title: "Mystery at Midnight <br> II part",
-        description: "A captivating mystery that keeps you guessing until the end.",
-        priceUAH: 1000
-    },
-];
-
 let sortedBooks = []
+if (JSON.parse ( localStorage.getItem ( 'booksArray' ) ) == null) {
+    localStorage.setItem ( 'booksArray', JSON.stringify ( [] ) )
+}
+let books = JSON.parse ( localStorage.getItem ( 'booksArray' ) )
+books.push ( {
+    countOfPages: 515,
+    author: "Joe Abercrombie",
+    title: "The Blade Itself",
+    description: "Logen Ninefingers, infamous barbarian, has finally run out of luck. Caught in one feud too many, he’s on the verge of becoming a dead barbarian – leaving nothing behind him but bad songs, dead friends, and a lot of happy enemies.",
+    priceUAH: 515
+} )
+books.push ( {
+    countOfPages: 320,
+    author: "John Doe",
+    title: "The Great Adventure",
+    description: "A thrilling adventure novel with twists and turns.",
+    priceUAH: 550
+} )
+if (JSON.parse ( localStorage.getItem ( 'booksArray' ) ).length === 0) {
+    localStorage.setItem ( 'booksArray', JSON.stringify ( books ) )
+}
+books = JSON.parse ( localStorage.getItem ( 'booksArray' ) )
 
 const cardsContainer = document.querySelector ( '.cards-container' );
 const darkBackground = document.querySelector ( '.dark-background' );
@@ -50,15 +42,12 @@ const clearButton = document.getElementById ( 'clearButton' );
 const countButton = document.getElementById ( 'count-button' );
 const sortInput = document.getElementById ( 'sort-input' );
 
-renderModelsOnLoad ( books )
+renderModelsOnLoad (books)
 clearButton.addEventListener ( "click", () => {
     clearInput ()
     clearContainer ()
     renderModelsOnLoad ( books )
-
-    console.log ( sortedBooks )
     sortedBooks.length = 0;
-    console.log ( sortedBooks )
 } );
 
 searchButton.addEventListener ( "click", () => {
@@ -69,7 +58,6 @@ searchButton.addEventListener ( "click", () => {
     books.forEach ( (book) => {
         if (book.title.toLowerCase ().includes ( searchingTile )) {
             sortedBooks.push ( book );
-            console.log ( sortedBooks );
             cardsContainer.innerHTML += returnCard ( book );
             isFound = true;
         }
@@ -97,6 +85,7 @@ countButton.addEventListener ( 'click', () => {
 } );
 
 sortInput.addEventListener ( 'change', () => {
+    console.log ( sortedBooks )
     if (sortInput.checked) {
         if (sortedBooks.length > 0) {
             sortModels ( sortedBooks );
