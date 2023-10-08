@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Books</title>
+    <title>SportComplex</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -30,16 +30,24 @@
                     <li>
                         <a href="index.html">
                             <img src="img/menu-burger.png">
+                            <img src="img/menu-burger-hover.png">
                             Data
                         </a>
                     </li>
                     <li>
-                        <a href="create.html">
+                        <a href="#">
                             <img src="img/page.png">
+                            <img src="img/page-hover.png">
                             Create
                         </a>
                     </li>
-
+                    <li>
+                        <a href="#">
+                            <img src="img/editing.png">
+                            <img src="img/editing-hover.png">
+                            Edit
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -52,22 +60,13 @@
 </header>
 <main>
     <aside class="side-manager">
-
-        <div class="sort-block">
-            <h2> Sort by the most <br>
-                expensive book </h2>
-            <input type="checkbox" id="sort-input">
-            <label for="sort-input">
-                <span class="circle-check"></span>
-            </label>
-        </div>
-        <hr>
+        <hr style="width: 80%">
         <div class="count-block">
             <h2>Count total cost of books: </h2>
             <button id="count-button">
                 Count
             </button>
-            <p class="total-cost"></p>
+
         </div>
     </aside>
     <section class="cards-container">
@@ -75,5 +74,6 @@
     </section>
 </main>
 <script type="module" src="js/script.js"></script>
+<script type="module" src="js/utils.js"></script>
 </body>
 </html>

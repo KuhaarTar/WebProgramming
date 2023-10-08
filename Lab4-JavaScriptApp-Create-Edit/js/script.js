@@ -58,7 +58,7 @@ searchButton.addEventListener ( "click", () => {
     books.forEach ( (book) => {
         if (book.title.toLowerCase ().includes ( searchingTile )) {
             sortedBooks.push ( book );
-            cardsContainer.innerHTML += returnCard ( book );
+            renderModelsOnLoad(sortedBooks)
             isFound = true;
         }
     } )
@@ -88,9 +88,9 @@ sortInput.addEventListener ( 'change', () => {
     console.log ( sortedBooks )
     if (sortInput.checked) {
         if (sortedBooks.length > 0) {
-            sortModels ( sortedBooks );
+            renderModelsOnLoad(sortModels ( sortedBooks ));
         } else {
-            sortModels ( books );
+            renderModelsOnLoad(sortModels (books));
         }
     } else {
         if (sortedBooks.length > 0) {

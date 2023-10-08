@@ -8,7 +8,7 @@
 
 .item_card {
     margin: 0 1rem 1rem;
-    max-height: 52vh;
+    max-height: 50vh;
     width: 20%;
     background-color: #e5e5e5;
     position: relative;
@@ -49,8 +49,13 @@
     -webkit-box-orient: vertical;
 }
 
+.cards-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .edit-button {
-    position: relative;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     padding: 0.5rem 1rem;
@@ -62,6 +67,22 @@
     border-radius: 10px;
 }
 
-.edit-button:hover {
+.delete-card {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.5rem 1rem;
+    color: #ff3232;
+    font-weight: bold;
+    font-size: 0.9rem;
+    background-color: transparent;
+    border: #ff3232 2px solid;
+    border-radius: 10px;
+}
+
+.cards-buttons button:hover {
     transform: scale(1.1);
 }
+
+.cards-buttons button {
+}
+
