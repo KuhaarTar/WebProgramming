@@ -49,25 +49,28 @@ clearButton.addEventListener ( "click", () => {
     renderModelsOnLoad ( books )
     sortedBooks.length = 0;
 } );
-
-searchButton.addEventListener ( "click", () => {
+searchButton.addEventListener("click", () => {
     sortedBooks.length = 0;
-    clearContainer ()
+    clearContainer();
     let isFound = false;
-    let searchingTile = searchInput.value.toLowerCase ();
-    books.forEach ( (book) => {
-        if (book.title.toLowerCase ().includes ( searchingTile )) {
-            sortedBooks.push ( book );
-            cardsContainer.innerHTML += returnCard ( book );
+    let searchingTile = searchInput.value.toLowerCase();
+
+    books.forEach((book, originalIndex) => {
+        if (book.title.toLowerCase().includes(searchingTile)) {
+            let bookWithOriginalIndex = {...book, originalIndex: originalIndex};
+            sortedBooks.push(bookWithOriginalIndex);
             isFound = true;
         }
-    } )
-    if (!isFound) {
-        renderModelsOnLoad ( books );
-        darkBackground.classList.remove ( 'hide-element' );
-        modal.classList.remove ( 'hide-element' );
+    });
+
+    if (isFound) {
+        renderModelsOnLoad(sortedBooks);
+    } else {
+        renderModelsOnLoad(books);
+        darkBackground.classList.remove('hide-element');
+        modal.classList.remove('hide-element');
     }
-} )
+});
 
 closeModal.addEventListener ( 'click', () => {
     darkBackground.classList.add ( 'hide-element' );
@@ -88,9 +91,9 @@ sortInput.addEventListener ( 'change', () => {
     console.log ( sortedBooks )
     if (sortInput.checked) {
         if (sortedBooks.length > 0) {
-            sortModels ( sortedBooks );
+            renderModelsOnLoad(sortModels ( sortedBooks ));
         } else {
-            sortModels ( books );
+            renderModelsOnLoad(sortModels (books));
         }
     } else {
         if (sortedBooks.length > 0) {
