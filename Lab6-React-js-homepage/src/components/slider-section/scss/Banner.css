@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+.banner-wrapper {
+  background: rgba(245, 245, 245, 0.4);
+  padding: 2rem;
+}
+.banner-wrapper .banner {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.banner-wrapper .on-banner-text {
+  height: 50%;
+  top: 5%;
+  width: 30%;
+  position: absolute;
+  font-family: "Manrope", sans-serif;
+  font-size: 3.2rem;
+  color: white;
+  left: 7rem;
+}
+.banner-wrapper .on-banner-text span {
+  color: #F0B861;
+}
+
+/*# sourceMappingURL=Banner.css.map */
