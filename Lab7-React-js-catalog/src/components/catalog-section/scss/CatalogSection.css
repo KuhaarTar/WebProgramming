@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+.catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem 2rem 4rem;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.catalog .books-container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto 7rem;
+}
+
+/*# sourceMappingURL=CatalogSection.css.map */

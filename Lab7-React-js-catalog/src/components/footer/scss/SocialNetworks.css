@@ -1,0 +1,16 @@
+.social-networks {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+}
+.social-networks a {
+  margin-left: 1rem;
+}
+.social-networks a .social-img {
+  width: 2rem;
+}
+.social-networks a .social-img:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=SocialNetworks.css.map */

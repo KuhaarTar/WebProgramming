@@ -1,0 +1,11 @@
+@use '../../../assets/base';
+
+.books-container{
+  @include base.cards-wrapper;
+  background-color: base.$body-back;
+  padding: 0 2rem 2rem;
+
+  .books {
+    @include base.cards-list;
+  }
+}

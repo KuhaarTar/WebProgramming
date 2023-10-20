@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../../assets/_base.scss","CatalogBookCard.module.scss"],"names":[],"mappings":"AAAQ;ACER;EACE,kBDDkB;ECElB,aDDU;ECEV;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;;AAGF;EACE;EACA;EACA;;AAEA;EACE;EACA,ODnBqB;;ACsBvB;EACE;EACA,ODxBqB;;AC2BvB;EACE;EACA,OD9Ba;;ACiCf;EACE,ODnCQ","file":"CatalogBookCard.module.css"}
