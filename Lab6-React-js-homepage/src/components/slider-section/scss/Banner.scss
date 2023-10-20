@@ -1,0 +1,29 @@
+@use "../../base";
+
+.banner-wrapper {
+  background: base.$body-back;
+  padding: 2rem;
+
+  .banner {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+
+  .on-banner-text {
+    height: 50%;
+    top: 5%;
+    width: 30%;
+    position: absolute;
+    font-family: base.$main-font;
+    font-size: 3.2rem;
+    color: white;
+    left: 7rem;
+
+    span {
+      color: #F0B861;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@use '../../base';
+
+.books-header {
+  margin: 0 auto;
+  width: 89%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .best-seller {
+    font-family: base.$main-font;
+    color: #090937;
+  }
+
+  .view-all {
+    color: #EF6B4A;
+    text-decoration: none;
+  }
+
+}

@@ -1,0 +1,39 @@
+@use '../../base';
+
+.book-card {
+  background-color: base.$light-purple-back;
+  font-family: base.$main-font;
+  border: #dbdbe5 1px solid;
+  border-radius: 7px;
+  padding-top: 0.3rem;
+  display: flex;
+  width: 22%;
+
+  img {
+    width: 45%;
+  }
+
+  .book-information {
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .book-title {
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: base.$blue-title-color;
+  }
+
+  .book-author {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: base.$blue-title-color-opacity;
+    font-weight: bold;
+  }
+
+  .book-price {
+    color: base.$purple-text;
+  }
+}
