@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+.books {
+  background-color: rgba(245, 245, 245, 0.4);
+  padding: 0 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.books .books-container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto 7rem;
+}
+
+/*# sourceMappingURL=BooksContainer.css.map */

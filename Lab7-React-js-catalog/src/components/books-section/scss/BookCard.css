@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+.book-card {
+  background-color: #F4F4FF;
+  font-family: "Manrope", sans-serif;
+  border: #dbdbe5 1px solid;
+  border-radius: 7px;
+  padding-top: 0.3rem;
+  display: flex;
+  width: 22%;
+}
+.book-card img {
+  width: 45%;
+}
+.book-card .book-information {
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.book-card .book-title {
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: #090937;
+}
+.book-card .book-author {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: rgba(9, 9, 55, 0.6);
+  font-weight: bold;
+}
+.book-card .book-price {
+  color: #6251DD;
+}
+
+/*# sourceMappingURL=BookCard.css.map */

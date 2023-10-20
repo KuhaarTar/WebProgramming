@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+.catalog-book {
+  background-color: #F4F4FF;
+  font-family: "Manrope", sans-serif;
+  border: #dbdbe5 1px solid;
+  border-radius: 7px;
+  padding-top: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.8rem;
+  width: 20%;
+}
+.catalog-book img {
+  width: 80%;
+  margin: 0 auto;
+}
+.catalog-book .book-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.catalog-book .book-content .book-author {
+  margin: 0;
+  color: rgba(9, 9, 55, 0.6);
+}
+.catalog-book .book-content .book-pages {
+  margin-top: 0.5rem;
+  color: rgba(9, 9, 55, 0.6);
+}
+.catalog-book .book-content .book-title {
+  margin-bottom: 0.5rem;
+  color: #090937;
+}
+.catalog-book .book-content .book-price {
+  color: #6251DD;
+}
+
+/*# sourceMappingURL=CatalogBookCard.module.css.map */

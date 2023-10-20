@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+.books-header {
+  margin: 0 auto;
+  width: 89%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.books-header .best-seller {
+  font-family: "Manrope", sans-serif;
+  color: #090937;
+}
+.books-header .view-all {
+  color: #EF6B4A;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=SectionHeader.css.map */

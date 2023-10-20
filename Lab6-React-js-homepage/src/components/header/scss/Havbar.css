@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+.navbar {
+  font-family: "Manrope", sans-serif;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.navbar a {
+  display: block;
+  width: 6rem;
+  text-decoration: none;
+  color: #6251DD;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0.6rem;
+  border-radius: 10px;
+  background-color: #F4F4FF;
+}
+.navbar a:hover {
+  transform: scale(0.9);
+}
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+.navbar li {
+  margin-right: 2rem;
+}
+
+/*# sourceMappingURL=Havbar.css.map */

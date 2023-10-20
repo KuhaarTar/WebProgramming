@@ -1,0 +1,13 @@
+@use "./../../../assets/base";
+
+.catalog {
+  @include base.cards-wrapper;
+  padding: 0.5rem 2rem 4rem;
+  flex-direction: row;
+  justify-content: space-around;
+
+
+  .books-container {
+    @include base.cards-list;
+  }
+}

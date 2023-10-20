@@ -1,0 +1,49 @@
+@use "../../base";
+
+.footer-container {
+  border-top: base.$light-purple-back 3px solid;
+  background-color: white;
+
+  .footer-content {
+    margin: 1.5rem auto;
+    width: 85%;
+
+    .copyright {
+      color: base.$blue-title-color-opacity;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    hr {
+      background-color: base.$blue-title-color-opacity;
+      height: 1.5px;
+      border: none;
+    }
+
+    .top-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .website-inform {
+        width: 20%;
+
+        h3 {
+          color: base.$purple-text;
+          margin-bottom: 0.2rem;
+          font-size: 1rem;
+        }
+
+        p {
+          margin-top: 0;
+          color: base.$blue-title-color-opacity;
+          font-size: 0.85rem;
+        }
+      }
+
+      .logo {
+        width: 3.5rem;
+      }
+    }
+  }
+}

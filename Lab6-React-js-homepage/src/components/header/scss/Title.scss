@@ -1,0 +1,19 @@
+@use "../../base";
+
+.store-title {
+  color: base.$purple-text;
+  font-weight: normal;
+  font-size: 1.4rem;
+  font-family: base.$main-font;
+  margin-left: 1rem;
+}
+
+.title-container {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+
+  .logo {
+    width: 3.5rem;
+  }
+}

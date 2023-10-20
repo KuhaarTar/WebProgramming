@@ -1,0 +1,17 @@
+@use '../../base';
+
+.books {
+  background-color: base.$body-back;
+  padding: 0 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .books-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto 7rem;
+  }
+}
