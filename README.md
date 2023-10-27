@@ -28,3 +28,7 @@
 ***
 ### Лабораторна робота №7 (books)
 Посилання на вітку [тут](https://github.com/KuhaarTar/WebProgramming/tree/react-catalog%26routes)
+
+***
+### Лабораторна робота №8 (books)
+Посилання на вітку [тут](https://github.com/KuhaarTar/WebProgramming/tree/react-functionality)
