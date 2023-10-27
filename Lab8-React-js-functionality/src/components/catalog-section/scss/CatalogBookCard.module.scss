@@ -1,0 +1,51 @@
+@use "./../../../assets/base";
+
+.catalog-book {
+  background-color: base.$light-purple-back;
+  font-family: base.$main-font;
+  border: #dbdbe5 1px solid;
+  border-radius: 7px;
+  padding-top: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.8rem;
+  width: 18%;
+
+  a {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 80%;
+      margin: 0 auto;
+
+      &:hover{
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .book-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    .book-author {
+      margin: 0;
+      color: base.$blue-title-color-opacity;
+    }
+
+    .book-pages {
+      margin-top: 0.5rem;
+      color: base.$blue-title-color-opacity;
+    }
+
+    .book-title {
+      margin-bottom: 0.5rem;
+      color: base.$blue-title-color;
+    }
+
+    .book-price {
+      color: base.$purple-text;
+    }
+  }
+}

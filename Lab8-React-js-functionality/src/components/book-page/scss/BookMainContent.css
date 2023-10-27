@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+.content-wrapper {
+  width: 85%;
+  margin: 1.5rem auto;
+  display: flex;
+}
+.content-wrapper .img-wrapper {
+  width: 130%;
+}
+.content-wrapper .img-wrapper .book-img-back {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #F4F4FF;
+  padding: 1rem;
+  border: #dbdbe5 1px solid;
+  border-radius: 5px;
+}
+.content-wrapper .img-wrapper .book-img-back img {
+  width: 90%;
+}
+.content-wrapper .information-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rem;
+}
+.content-wrapper .information-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.content-wrapper .information-header .author-title {
+  width: 100%;
+}
+.content-wrapper .information-header .author-title h1 {
+  margin-top: 0;
+  font-weight: normal;
+  font-family: "Manrope", sans-serif;
+}
+.content-wrapper .information-header .author-title h2 {
+  font-weight: bold;
+  font-family: "Manrope", sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+}
+.content-wrapper .description {
+  width: 100%;
+}
+.content-wrapper .description h3 + p {
+  font-family: "Manrope", sans-serif;
+}
+.content-wrapper .description h3 {
+  color: #090937;
+}
+.content-wrapper .description p {
+  width: 100%;
+  color: rgba(9, 9, 55, 0.6);
+}
+
+/*# sourceMappingURL=BookMainContent.css.map */
