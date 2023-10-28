@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="dark-background hide-element">
+
+</div>
+<div class="bad-request-modal hide-element">
+    <button id="close-modal">
+        <img src="img/close.png" alt="close-modal">
+    </button>
+    <p>
+        Not found such element by title <br>
+        please try again.
+    </p>
+</div>
+<header class="header">
+    <div class="header-cont">
+        <div class="left-header">
+            <div class="logo-container">
+                <img src="img/blockchain.png" alt="logo" class="logo-img">
+                <h1>Book CRUD</h1>
+            </div>
+            <nav class="navbar-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="img/menu-burger.png">
+                            Data
+                        </a>
+                    </li>
+                    <li>
+                        <a href="create.html">
+                            <img src="img/page.png">
+                            Create
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/editing.png">
+                            Edit
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-block">
+            <input type="text" id="searchInput" placeholder="Search by title...">
+            <button id="searchButton">Search</button>
+            <button id="clearButton">Clear</button>
+        </div>
+    </div>
+</header>
+<main>
+    <aside class="side-manager">
+
+        <div class="sort-block">
+            <h2> Sort by the most <br>
+                expensive book </h2>
+            <input type="checkbox" id="sort-input">
+            <label for="sort-input">
+                <span class="circle-check"></span>
+            </label>
+        </div>
+        <hr>
+        <div class="count-block">
+            <h2>Count total cost of books: </h2>
+            <button id="count-button">
+                Count
+            </button>
+            <p class="total-cost"></p>
+        </div>
+    </aside>
+    <section class="cards-container">
+
+    </section>
+</main>
+<script type="module" src="js/script.js"></script>
+</body>
+</html>
