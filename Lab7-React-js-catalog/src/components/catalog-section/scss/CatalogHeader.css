@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+.catalog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+.catalog-header .title {
+  font-family: "Manrope", sans-serif;
+  color: #090937;
+}
+.catalog-header .filter-block {
+  padding: 0.7rem 1rem;
+  overflow: visible;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  animation: appear-from-left 1s;
+}
+.catalog-header .filter-block input {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  border-bottom: #6251DD 2px solid;
+  font-family: "Manrope", sans-serif;
+  padding: 0;
+  overflow: visible;
+}
+.catalog-header .filter-block input:focus {
+  outline: none;
+}
+.catalog-header .filter-block input:focus::placeholder {
+  transform: translateY(1rem);
+  transition: all 0.5s;
+}
+.catalog-header .filter-block h1 {
+  margin: 0;
+}
+@keyframes appear-from-left {
+  0% {
+    transform: translateX(15%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 30%;
+  }
+}
+.catalog-header .filter-wrapper {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+.catalog-header .filter-wrapper .apply-filters {
+  font-family: "Manrope", sans-serif;
+  background-color: transparent;
+  padding: 0.1rem;
+  cursor: pointer;
+  border: none;
+  color: #6251DD;
+  font-size: 0.9rem;
+}
+.catalog-header .filter-wrapper .apply-filters:hover {
+  transform: scale(1.1);
+}
+.catalog-header .hidden-element {
+  display: none;
+}
+.catalog-header .filter-icon {
+  margin-left: 2rem;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 2rem;
+  height: 1rem;
+}
+.catalog-header .filter-icon:hover::before {
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgb(245, 245, 245);
+  border-radius: 50%;
+  position: absolute;
+  top: -0.8rem;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+.catalog-header .filter-icon span {
+  background-color: #6251DD;
+  width: 2rem;
+  height: 0.15rem;
+  position: absolute;
+}
+.catalog-header .filter-icon span:nth-child(1) {
+  top: 5%;
+}
+.catalog-header .filter-icon span:nth-child(2) {
+  top: 50%;
+  width: 1.5rem;
+}
+.catalog-header .filter-icon span:nth-child(3) {
+  top: 95%;
+  width: 1rem;
+}
+
+/*# sourceMappingURL=CatalogHeader.css.map */
