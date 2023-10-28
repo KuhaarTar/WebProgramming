@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="header-cont">
+        <div class="left-header">
+            <div class="logo-container">
+                <img src="img/blockchain.png" alt="logo" class="logo-img">
+                <h1>Book CRUD</h1>
+            </div>
+            <nav class="navbar-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="img/menu-burger.png">
+                            Data
+                        </a>
+                    </li>
+                    <li>
+                        <a href="create.html">
+                            <img src="img/page.png">
+                            Create
+                        </a>
+                    </li>
+                    <li>
+                        <a href="edit.html">
+                            <img src="img/editing.png">
+                            Edit
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="create-section">
+        <h1>
+            Edit book
+        </h1>
+        <form action="" class="create-form">
+            <label for="title-input"> Input book tittle for edit </label>
+            <input type="text" id="title-input" list="select-by-title" placeholder="Searching by title..">
+            <datalist id="select-by-title">
+
+            </datalist>
+            <label for="author-input"> Author </label>
+            <input type="text" placeholder="Author.." id="author-input" required>
+            <datalist id="author-data">
+            </datalist>
+            <label for="price-input"> Price </label>
+            <input type="number" placeholder="Price.." id="price-input" required>
+            <datalist id="price-data">
+            </datalist>
+            <label for="pages-input"> Count of pages </label>
+            <input type="number" placeholder="Count of pages.." id="pages-input" required>
+            <datalist id="pages-data">
+            </datalist>
+            <label for="description"> </label>
+            <textarea id="description" required></textarea>
+            <datalist id="description-data">
+            </datalist>
+            <button type="button" id="submit-form">Submit</button>
+        </form>
+    </section>
+    <div class="bad-form-window hide-element bad-form-window-animation-appear">
+        <button class="close-bad-form-modal">
+            <img src="img/close.png" alt="close-modal">
+        </button>
+        <p>
+            <span class="snap"> Oh snap! </span> Change a few things in form and try submitting again.
+        </p>
+    </div>
+    <div class="not-found-window hide-element bad-form-window-animation-appear">
+        <button class="close-bad-form-modal-not">
+            <img src="img/close.png" alt="close-modal">
+        </button>
+        <p>
+            Oh no! Not found such element by title please try again.
+        </p>
+    </div>
+</main>
+<script type="module" src="js/edit.js"></script>
+</body>
+</html>
