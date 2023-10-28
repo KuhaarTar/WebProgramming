@@ -6,7 +6,7 @@ const BuyButton = (props) => {
             <button className={'buy-button'}>
                 {props.price +'$'}
                 <p>
-                    Buy now
+                    Add to cart
                 </p>
             </button>
         </div>

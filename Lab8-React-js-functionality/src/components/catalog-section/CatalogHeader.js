@@ -29,6 +29,9 @@ const CatalogHeader = (props) => {
 
     function submitFilters() {
         const {price, pages, author} = filterObject;
+        if (price < 0) {
+            alert('Minus value')
+        }
 
         let filteredResult = props.data.filter((book) =>
             (!price || book.priceInUah === parseFloat(price)) &&

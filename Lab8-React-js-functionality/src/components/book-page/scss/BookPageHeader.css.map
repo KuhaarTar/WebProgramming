@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../../assets/_base.scss","BookPageHeader.scss"],"names":[],"mappings":"AAAQ;ACER;EACE;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;;AAGF;EACE;EACA,ODXe;ECYf,aDdQ","file":"BookPageHeader.css"}
+{"version":3,"sourceRoot":"","sources":["../../../assets/_base.scss","BookPageHeader.scss"],"names":[],"mappings":"AAAQ;ACER;EACE;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;;AAGF;EACE;EACA;EACA;EACA,ODbe;ECcf,aDhBQ","file":"BookPageHeader.css"}
