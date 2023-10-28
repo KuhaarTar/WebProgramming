@@ -1,0 +1,18 @@
+.dots-container {
+  margin: 1rem auto;
+  width: 3.5%;
+  display: flex;
+  justify-content: space-between;
+}
+.dots-container .dot {
+  background-color: rgba(9, 9, 55, 0.6);
+  border-radius: 50px;
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.dots-container .dot:nth-child(2) {
+  background-color: #EF6B4A;
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=SliderDots.css.map */
