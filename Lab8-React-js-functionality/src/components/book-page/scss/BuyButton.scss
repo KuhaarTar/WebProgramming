@@ -1,0 +1,31 @@
+@use './../../../assets/base';
+
+.button-wrapper {
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: right;
+
+  .buy-button {
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 25%;
+    background-color: base.$orange;
+    border: base.$orange 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      background-color: transparent;
+      border: base.$orange 2px solid;
+      color: base.$orange;
+    }
+  }
+}

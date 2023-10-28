@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+.store-title {
+  color: #6251DD;
+  font-weight: normal;
+  font-size: 1.4rem;
+  font-family: "Manrope", sans-serif;
+  margin-left: 1rem;
+}
+
+.title-container {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.title-container .logo {
+  width: 3.5rem;
+}
+
+/*# sourceMappingURL=Title.css.map */

@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+.books-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(245, 245, 245, 0.4);
+  padding: 0 2rem 2rem;
+}
+.books-container .books {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto 7rem;
+  margin: 0 auto 4rem;
+}
+.books-container .books-footer {
+  margin: 0 auto 2rem;
+}
+.books-container .view-more-btn {
+  border: none;
+  font-size: 1rem;
+  background: transparent;
+  font-family: "Manrope", sans-serif;
+  color: #EF6B4A;
+  cursor: pointer;
+  text-decoration: none;
+}
+.books-container .view-more-btn:hover {
+  text-decoration: underline #EF6B4A;
+}
+
+/*# sourceMappingURL=BooksContainer.css.map */

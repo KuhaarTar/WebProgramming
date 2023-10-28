@@ -1,0 +1,29 @@
+@use '../../../assets/base';
+
+.books-container {
+  @include base.cards-wrapper;
+  background-color: base.$body-back;
+  padding: 0 2rem 2rem;
+
+  .books {
+    @include base.cards-list;
+    margin: 0 auto 4rem;
+  }
+
+  .books-footer {
+    margin: 0 auto 2rem;
+  }
+
+  .view-more-btn {
+    border: none;
+    font-size: 1rem;
+    background: transparent;
+    font-family: base.$main-font;
+    @include base.orange-buttons;
+
+    &:hover {
+      text-decoration: underline base.$orange;
+    }
+
+  }
+}

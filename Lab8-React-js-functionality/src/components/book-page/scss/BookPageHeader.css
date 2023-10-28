@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+.book-page-header {
+  margin: 0 auto;
+  padding-top: 1rem;
+  width: 85%;
+  display: flex;
+  align-items: center;
+}
+.book-page-header img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.book-page-header h2 {
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  color: #090937;
+  font-family: "Manrope", sans-serif;
+}
+
+/*# sourceMappingURL=BookPageHeader.css.map */
