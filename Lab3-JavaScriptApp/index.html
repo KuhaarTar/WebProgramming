@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SportComplex</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="dark-background hide-element">
+
+</div>
+<div class="bad-request-modal hide-element">
+    <button id="close-modal">
+        <img src="img/close.png" alt="close-modal">
+    </button>
+    <p>
+        Not found such element by title <br>
+        please try again.
+    </p>
+</div>
+<header class="header">
+    <div class="header-cont">
+        <div class="left-header">
+            <div class="logo-container">
+                <img src="img/blockchain.png" alt="logo" class="logo-img">
+                <h1>Book CRUD</h1>
+            </div>
+            <nav class="navbar-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="img/menu-burger.png">
+                            <img src="img/menu-burger-hover.png">
+                            Data
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/page.png">
+                            <img src="img/page-hover.png">
+                            Create
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/editing.png">
+                            <img src="img/editing-hover.png">
+                            Edit
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-block">
+            <input type="text" id="searchInput" placeholder="Search by title...">
+            <button id="searchButton">Search</button>
+            <button id="clearButton">Clear</button>
+        </div>
+    </div>
+</header>
+<main>
+    <aside class="side-manager">
+        <hr style="width: 80%">
+        <div class="count-block">
+            <h2>Count total cost of books: </h2>
+            <button id="count-button">
+                Count
+            </button>
+
+        </div>
+    </aside>
+    <section class="cards-container">
+
+    </section>
+</main>
+<script type="module" src="js/script.js"></script>
+<script type="module" src="js/utils.js"></script>
+</body>
+</html>
