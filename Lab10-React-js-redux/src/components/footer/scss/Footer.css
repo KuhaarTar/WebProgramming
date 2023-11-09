@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+.footer-container {
+  border-top: #F4F4FF 3px solid;
+  background-color: white;
+}
+.footer-container .footer-content {
+  margin: 1.5rem auto;
+  width: 85%;
+}
+.footer-container .footer-content .copyright {
+  color: rgba(9, 9, 55, 0.6);
+  text-align: center;
+  font-size: 0.9rem;
+}
+.footer-container .footer-content hr {
+  background-color: rgba(9, 9, 55, 0.6);
+  height: 1.5px;
+  border: none;
+}
+.footer-container .footer-content .top-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-container .footer-content .top-content .website-inform {
+  width: 20%;
+}
+.footer-container .footer-content .top-content .website-inform h3 {
+  color: #6251DD;
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+}
+.footer-container .footer-content .top-content .website-inform p {
+  margin-top: 0;
+  color: rgba(9, 9, 55, 0.6);
+  font-size: 0.85rem;
+}
+.footer-container .footer-content .top-content .logo {
+  width: 3.5rem;
+}
+
+/*# sourceMappingURL=Footer.css.map */

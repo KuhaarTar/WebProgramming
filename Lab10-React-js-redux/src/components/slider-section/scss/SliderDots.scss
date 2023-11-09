@@ -1,0 +1,18 @@
+.dots-container {
+  margin: 1rem auto;
+  width: 3.5%;
+  display: flex;
+  justify-content: space-between;
+
+  .dot {
+    background-color: rgb(9, 9, 55, 0.6);
+    border-radius: 50px;
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+
+  .dot:nth-child(2) {
+    background-color: #EF6B4A;
+    transform: scale(1.2);
+  }
+}
