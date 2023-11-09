@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../../assets/_base.scss","BookCard.scss"],"names":[],"mappings":"AAAQ;ACER;EACE,kBDDkB;ECElB,aDDU;ECEV;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;;AAGF;EACE;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA,ODrBe;;ACwBjB;EACE;EACA;EACA,OD1BuB;EC2BvB;;AAGF;EACE,ODjCU","file":"BookCard.css"}

@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+.cartHeader {
+  width: 85%;
+  margin: 0 auto;
+}
+.cartHeader .title {
+  color: #090937;
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.cartHeader a {
+  text-decoration: none;
+}
+.cartHeader hr {
+  width: 100%;
+  border: none;
+  background: #e5e5e5;
+  height: 2px;
+}
+.cartHeader h3 {
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+  color: rgba(9, 9, 55, 0.6);
+}
+.cartHeader p {
+  margin: 0;
+  color: rgba(9, 9, 55, 0.6);
+}
+
+/*# sourceMappingURL=CartHeader.module.css.map */

@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+.cartContainer {
+  width: 85%;
+  margin: 3rem auto;
+}
+
+.totalAmountWrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+.totalAmountWrapper p {
+  font-size: 1.2rem;
+  font-weight: initial;
+  color: rgba(9, 9, 55, 0.6);
+}
+.totalAmountWrapper p span {
+  font-weight: bold;
+  color: #6251DD;
+}
+
+/*# sourceMappingURL=CartItemsContainer.module.css.map */

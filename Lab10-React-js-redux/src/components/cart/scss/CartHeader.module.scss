@@ -1,0 +1,36 @@
+@use "./../../../assets/base";
+
+.cartHeader {
+  width: 85%;
+  margin: 0 auto;
+
+  .title {
+    color: base.$blue-title-color;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  hr {
+    width: 100%;
+    border: none;
+    background: #e5e5e5;
+    height: 2px;
+  }
+
+  h3 {
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    color: base.$blue-title-color-opacity;
+  }
+
+  p {
+    margin: 0;
+    color: base.$blue-title-color-opacity;
+  }
+}
+

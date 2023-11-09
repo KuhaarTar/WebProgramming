@@ -1,0 +1,21 @@
+@use "./../../../assets/base";
+
+.cartContainer {
+  width: 85%;
+  margin: 3rem auto;
+}
+
+.totalAmountWrapper {
+  width: 85%;
+  margin: 0 auto;
+
+  p {
+    font-size: 1.2rem;
+    font-weight: initial;
+    color: base.$blue-title-color-opacity;
+    span {
+      font-weight: bold;
+      color: base.$purple-text;
+    }
+  }
+}
